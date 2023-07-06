@@ -13,34 +13,7 @@
   <property name="windowTitle">
    <string>rmviz2</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>10</y>
-      <width>211</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>hi</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>80</y>
-      <width>95</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>subscribe</string>
-    </property>
-   </widget>
-  </widget>
+  <widget class="QWidget" name="centralwidget"/>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
