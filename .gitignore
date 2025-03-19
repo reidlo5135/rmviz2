@@ -1,0 +1,7 @@
+.vscode
+.idea
+build
+install
+log
+.autosave
+cmake-build-debug
