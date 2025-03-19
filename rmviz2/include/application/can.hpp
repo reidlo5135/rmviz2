@@ -10,7 +10,7 @@ namespace net::wavem::viz
     private:
         rclcpp::Node::SharedPtr node_;
 
-        
+
     public:
         explicit CanService(const rclcpp::Node::SharedPtr &node = nullptr);
         virtual ~CanService();

@@ -3,23 +3,28 @@
 
 #include <rclcpp/rclcpp.hpp>
 
+#include "domain/robot.hpp"
 #include "application/can.hpp"
+#include "application/robot.hpp"
 
 #define NODE_NAME "rmviz2"
 
 namespace net::wavem::viz
 {
-    class RMViz2 : public rclcpp::Node
+    class Node : public rclcpp::Node
     {
     private:
         rclcpp::Node::SharedPtr node_;
+        CanService::SharedPtr can_service_;
+        RobotService::SharedPtr robot_service_;
 
     public:
-        explicit RMViz2();
-        virtual ~RMViz2();
+        explicit Node();
+        virtual ~Node();
+        [[nodiscard]] Robot::SharedPtr get__robot() const;
 
     public:
-        using SharedPtr = std::shared_ptr<RMViz2>;
+        using SharedPtr = std::shared_ptr<Node>;
     };
 }
 
